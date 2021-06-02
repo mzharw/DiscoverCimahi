@@ -13,10 +13,12 @@
             <li><a href="#about">About</a></li>
         </ul>
     </nav>
-    <div class="container" id="front"></div>
+    <div class="container" id="front">
+        <div id="tagline"><span style="color:#193534;font-weight:500">Wilujeng Sumping di</span><h1>KOTA CIMAHI</h1></div>
+    </div>
     <div class="container" id="sejarah">
         <h1>Cimahi</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dignissimos accusamus facilis eum a repudiandae culpa omnis aut, est quibusdam voluptate error? Rerum inventore voluptatem impedit numquam aut, excepturi distinctio.</p>
+        <p>Kota kecil yang di wilayah aglomerasi Bandung Raya, baru saja lahir </p>
     </div>
     @stack('scripts')
 </body>

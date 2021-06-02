@@ -10,6 +10,7 @@ body{
 }
 
 .container#front{
+    margin-top: -79px;
     position: relative;
     background-image: url("https://res.cloudinary.com/zharcloudapi/image/upload/v1622647075/Discover%20Cimahi/4_dkgbxm.jpg");
     background-size: cover;
@@ -17,14 +18,14 @@ body{
     width: 100%;
     height: 100vh;
 }
-.landing-carousel{
+/* .landing-carousel{
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
-}
+} */
 nav{
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    z-index: 99;
 }
 
 ul {
@@ -35,7 +36,6 @@ ul {
 }
 
 li {
-    position: relative;
     padding: 0 20px 0 0;
     float: right;
 
@@ -50,5 +50,24 @@ li a {
 }
 
 li a:hover {
-    color: #6cb54b;
+    color: #4f7723;
+}
+
+.container#sejarah{
+    padding: 100px clamp(50px,125px,150px);
+    background-color: #193534;
+    color: #fff;
+}
+h1{
+    padding-bottom: 20px;
+}
+
+#tagline {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 300;
+    text-shadow:  10px 4px 2px rgba(25,53,52,0.2);
+    color: #FFFFFF;
 }
