@@ -5,3 +5,5 @@ $('.owl-carousel').owlCarousel({
     smartSpeed:400,
     items : 1, 
 })
+
+var rellax = new Rellax('.rellax');
