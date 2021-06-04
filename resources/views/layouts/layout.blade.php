@@ -10,5 +10,7 @@
 @push('scripts')
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.1.0/rellax.min.js" integrity="sha512-SrfWHMFboMoJVgMoD7K5VxXGCLGfvuKRAuKuAUI/p09NF6KUbGHbb4nYW1Z0D1MNHKpTCQs+FSuARhw7shP/Qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.1.0/rellax.js" integrity="sha512-RyArRwvAxCAux00Urh113jruhqHgY0ru2d3LoOJmgBIW0Zxjy/W8FIPSVIAdmTjTQ8tYixIkMZ7vy6U9LpKJew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{asset("js/script.js")}}"></script>
 @endpush

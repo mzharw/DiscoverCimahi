@@ -7,24 +7,26 @@
 
 body{
     font-family: 'Montserrat', sans-serif;    
+    background-color: #193534;
 }
 
 .container#front{
+    margin-top: -79px;
     position: relative;
-    background-image: url("https://res.cloudinary.com/zharcloudapi/image/upload/v1622647075/Discover%20Cimahi/4_dkgbxm.jpg");
+    background-image: url("https://res.cloudinary.com/zharcloudapi/image/upload/v1622729858/Discover%20Cimahi/land_mzli5v.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
 }
-.landing-carousel{
+/* .landing-carousel{
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
-}
+} */
 nav{
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    z-index: 99;
 }
 
 ul {
@@ -35,7 +37,6 @@ ul {
 }
 
 li {
-    position: relative;
     padding: 0 20px 0 0;
     float: right;
 
@@ -43,12 +44,54 @@ li {
 
 li a {
     display: block;
-    color: #193534;
+    color: #ffffff;
     text-align: center;
     padding: 30px 20px;
     text-decoration: none;
 }
 
 li a:hover {
-    color: #6cb54b;
+    color: #4f7723;
+}
+
+.container#sejarah{
+    padding: 150px clamp(50px,155px,155px);
+    background-color: white;
+    color: rgb(68, 68, 68);
+}
+.container#sejarah #img{
+    float: right;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container#sejarah #img img{
+    align-self: center;
+    height: 100%;
+}
+h1{
+    padding-bottom: 20px;
+}
+
+#tagline {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    font-size: 150px;
+    font-weight: 300;
+    color: #ffffff;
+}
+#h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+.text{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.text p{
+    max-width: 350px;
+    margin-top: 50px;
 }
