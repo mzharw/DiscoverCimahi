@@ -119,3 +119,11 @@ $('#article .nav-prev,#article .nav-next').mouseover(function(){
 $('#article .nav-prev,#article .nav-next').mouseleave(function(){
     article.trigger('play.owl.autoplay');
 })
+
+$('#destination .nav-prev,#destination .nav-next').mouseover(function(){
+    destination.trigger('stop.owl.autoplay');
+})
+
+$('#destination .nav-prev,#destionation .nav-next').mouseleave(function(){
+    destination.trigger('play.owl.autoplay');
+})

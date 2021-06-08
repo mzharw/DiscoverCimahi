@@ -48,8 +48,11 @@
                     <a href="a">
                     <div class="carousel-item-content">
                         <div class="carousel-item-desc">
-                            RSU Dustira
-                            <p>Aasfalksfalksfjd</p>
+                            <div id="article-date">
+                                20 Januari 2021
+                            </div>
+                        Pedagang Lotek Positif Corona Meninggal di RS Dustira Cimahi
+                            <p> Warga Kota Cimahi yang meninggal akibat Corona atau COVID-19 mengalami penambahan satu orang. Tercatat hingga kini pasien meninggal karena Corona di Cimahi sebanyak lima orang.</p>
                         </div>
                         <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622114771/Discover%20Cimahi/IMG_20210525_164311_ddvm8r.jpg">
                         <div class="carousel-item-fill"></div>
@@ -60,6 +63,9 @@
                     <a href="a">
                     <div class="carousel-item-content">
                         <div class="carousel-item-desc">
+                        <div id="article-date">
+                                04 Juni 2021
+                            </div>
                         Pasar Antri Cimahi Dibuka Lagi, Gelang Tangan Jadi Tanda Wajib bagi Pedagang yang Negatif Covid-19
                         <p>Suasana Pasar Antri belum terlalu ramai usai Pemkot Cimahi membuka secara resmi pasar di Jalan Sriwijaya Kota Cimahi, Minggu 7 Juni 2020.</p>
                         </div>
@@ -74,13 +80,17 @@
     <div class="container" id="prelude">
         <div class="content">
             <center>
-            <h1>Wilujeng Sumping !</h1><br><br>
+            <h1>Wilujeng Sumping</h1><br><br>
                 <p>Selamat datang di <b>discoverCimahi</b>! Kota Cimahi adalah kota kecil di Jawa Barat yang belum banyak orang kenal, Sehingga banyak Orang Cimahi yang mengaku-ngaku orang Bandung ketika ditanya tempat tinggal mereka. Mengapa demikian? simpel saja, mereka malas untuk menjelaskannya, dari pada repot-repot panjang lebar menjelaskan apa dan dimana itu Kota Cimahi, lebih cepat apabila kita langsung mengatakan nama "Bandung" yang sebenarnya belum jelas, karena Bandung itu ada Kota Bandung, Kabupaten Bandung, dan Kabupaten Bandung Barat. Nah loh kenapa begitu? Cimahi itu bukan Bandung, namun sangat erat kaitannya dengan Bandung. Baiklah, sebagai orang Cimahi yang baik, biar kami yang mengenalkan kepada Anda, mengenai seluk beluk Kota Cimahi. Berikut penjelasannya.</p>
             </center>
                 
         </div>
     </div>
     <div class="container" id="history">
+        <div id="history-img">
+            <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622922590/Discover%20Cimahi/8b_bjsc4n.jpg" alt="">
+        </div>
+    
         <!-- <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622922590/Discover%20Cimahi/8b_bjsc4n.jpg" alt=""> -->
         <div class="content">
         <div class="content-left">
@@ -117,7 +127,6 @@
         </div>
         <div class="content-right">
         <h1>Sejarah</h1><br><br><br>
-        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622922590/Discover%20Cimahi/8b_bjsc4n.jpg" alt="">
             <p>Kota Cimahi adalah sebuah kota di Provinsi Jawa Barat, Indonesia. Kota ini terletak di tengah Kabupaten Bandung, Kota Bandung dan Kabupaten Bandung Barat. Cimahi dahulu bagian dari Kabupaten Bandung, yang kemudian ditetapkan sebagai kota administratif pada tanggal 29 Januari 1976. Pada tanggal 21 Juni 2001, Cimahi ditetapkan sebagai kota otonom. Kota Cimahi terdiri atas 3 kecamatan, yang dibagi lagi atas 15 kelurahan.</p>
             <br>
             <p>Dalam bahasa Sunda, nama Cimahi berasal dari kata cai mahi yang berarti "air yang cukup"</p>
@@ -194,10 +203,10 @@
     </div>
     <div class="container" id="destination">
         <div class="nav-next">
-            <div class="carousel-nav carousel-next"><i class="fa fa-angle-right"></i></div>
+            <div class="carousel-nav carousel-next"><p>NEXT</p></div>
         </div>
         <div class="nav-prev">
-            <div class="carousel-nav carousel-prev"><i class="fa fa-angle-left"></i></div>
+            <div class="carousel-nav carousel-prev"><p>PREV</p></div>
         </div>
         
         <div class="content">
