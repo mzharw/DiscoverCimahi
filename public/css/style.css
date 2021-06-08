@@ -176,12 +176,21 @@ Container
 .container#history .content .content-right{
     text-align: justify;
 }
-.container#history>img{
+.container#history img{
     object-fit: cover;
     height: 100%;
     max-height: 500px;
     display: flex;
     justify-content: right;
+    width: 100%;
+}
+#history-img::before{
+    content: '';
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background: rgba(5, 25, 25, 0.336);
+    z-index: 5;
 }
 .container#history h1{
     padding-top: 50px;
@@ -344,7 +353,13 @@ Carousel
     padding-top: 10px;
 }
 
-
+.owl-article .carousel-item-desc #article-date{
+    position: absolute;
+    top: 0;
+    padding: 2px;
+    background-color: #3e6e3a;
+    font-size: 12px;
+}
 .carousel-nav{
     letter-spacing: 0.1rem;
     user-select: none;
