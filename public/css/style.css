@@ -30,7 +30,19 @@ Navigation
     background: rgb(21, 25, 29);
     /* background: #3e6e3a; */
 }
-
+.fixed-top{
+    animation: nav-stick 0.5s forwards;
+    position: fixed !important;
+    z-index: 99;
+}
+@keyframes nav-stick {
+    from{
+        top: -50%;
+    }
+    to{
+        top: 0;
+    }
+}
 header > nav{
     padding-top: 50px;
 }
@@ -107,6 +119,8 @@ Container
 }
 .container#front #front-fill{
     /* background: linear-gradient(to top, #193534, transparent); */
+    /* background: rgb(5,25,25);
+    background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%); */
     background: rgb(5,25,25);
     background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%);
     position: absolute;
@@ -172,7 +186,14 @@ Container
     background: linear-gradient(41deg, rgba(5,25,25,1) 0%, rgba(25,53,52,1) 28%, rgba(35,92,72,1) 62%, rgba(62,108,50,1) 95%, rgba(79,119,35,1) 100%);
     width: 100%;
 }
-
+.container#history h1{
+    margin: 0 250px;
+    position: absolute;
+    z-index: 3;
+}
+.container#history .content{
+    margin-top: 50px;
+}
 .container#history .content .content-right{
     text-align: justify;
 }
@@ -361,6 +382,7 @@ Carousel
     font-size: 12px;
 }
 .carousel-nav{
+    z-index: 99;
     letter-spacing: 0.1rem;
     user-select: none;
     color: #fff;
@@ -421,15 +443,19 @@ Carousel
     pointer-events: none;
 }
 /* History Carousel */
-.owl-history{
+.owl-history-wrapper{
     position: relative;
-    margin-top:50px
-    /* left:59.3%; */
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+}
+.owl-history{
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 .owl-history div{
-    overflow: hidden;
-    width: 550px;
-    height: 350px;
+    width: 100%;
 }
 .owl-history div img{
     align-self: center;
@@ -437,11 +463,46 @@ Carousel
     object-fit: cover;
     height: 100%;
 }
+.owl-history .carousel-item-desc{
+    font-size: 16px;
+    color: #ffffff;
+    z-index: 2;
+    padding: 50px;
+    max-width: 300px;
+    height: 100%;
+    right: 0;
+    /* background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 5px ); */
+    background-color: rgba(21, 25, 29, 0.658);
+    /* margin: 0 200px; */
+    position: absolute;
+    width:500px;
+}
+.owl-history .carousel-item-fill{
+    background: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.owl-history .carousel-item-fill::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgb(5,25,25);
+    background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%);
+    opacity: 1    ;
+    transition: opacity 0.5s ease-in-out;
+}
 /* Destination Carousel */
 .owl-destination{
     position: relative;
 }
-.owl-destination>div{
+.owl-destination div{
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -754,4 +815,47 @@ Flexbox
 }
 .visible{
     display: block;
+}
+.loader{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(5,25,25);
+    background: linear-gradient(41deg, rgba(5,25,25,1) 0%, rgba(25,53,52,1) 28%, rgba(35,92,72,1) 62%, rgba(62,108,50,1) 95%, rgba(79,119,35,1) 100%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.lds-ripple {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+    0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    }
+    100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+    }
 }

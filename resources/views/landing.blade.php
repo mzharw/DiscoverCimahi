@@ -4,6 +4,7 @@
     @include('layouts.layout')
     @stack('styles')
 </head>
+<div class="loader">L O A D I N G<div class="lds-ripple"><div></div><div></div></div></div>
 <body>
     <header>
         <nav>
@@ -15,7 +16,6 @@
         </ul>
     </nav>
     </header>
-    
     <div class="container rellax" data-rellax-speed="5" id="front">
         <div id="front-fill" class="rellax" data-rellax-speed="0"></div>
         <div id="front-img" >
@@ -26,7 +26,7 @@
             Telusuri dan Jelajahi ! Seluk beluk dan hal menarik dari Kota Cimahi! Mulai dari sejarah, kuliner, destinasi wisata, dan hal hal menarik lainnya disini !
         </div>
     </div>
-    <div class="section-nav rellax" data-rellax-speed="3.7" data-rellax-percentage="0">
+    <div class="section-nav sticky" data-rellax-speed="3" data-rellax-percentage="0">
         <nav>
         <ul>
             <li><a class="active" href="#history"><span class="fa fa-fw fa-landmark"></span> History</a></li>
@@ -79,19 +79,53 @@
     </div>
     <div class="container" id="prelude">
         <div class="content">
-            <center>
             <h1>Wilujeng Sumping</h1><br><br>
                 <p>Selamat datang di <b>discoverCimahi</b>! Kota Cimahi adalah kota kecil di Jawa Barat yang belum banyak orang kenal, Sehingga banyak Orang Cimahi yang mengaku-ngaku orang Bandung ketika ditanya tempat tinggal mereka. Mengapa demikian? simpel saja, mereka malas untuk menjelaskannya, dari pada repot-repot panjang lebar menjelaskan apa dan dimana itu Kota Cimahi, lebih cepat apabila kita langsung mengatakan nama "Bandung" yang sebenarnya belum jelas, karena Bandung itu ada Kota Bandung, Kabupaten Bandung, dan Kabupaten Bandung Barat. Nah loh kenapa begitu? Cimahi itu bukan Bandung, namun sangat erat kaitannya dengan Bandung. Baiklah, sebagai orang Cimahi yang baik, biar kami yang mengenalkan kepada Anda, mengenai seluk beluk Kota Cimahi. Berikut penjelasannya.</p>
-            </center>
                 
         </div>
     </div>
     <div class="container" id="history">
-        <div id="history-img">
-            <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622922590/Discover%20Cimahi/8b_bjsc4n.jpg" alt="">
+    <h1>Sejarah</h1>
+        <div class="owl-history-wrapper">
+            <div class="nav-prev">
+                <div class="carousel-nav carousel-prev" id="history-prev"><p>PREV</p></div>
+            </div>
+            <div class="nav-next">
+                <div class="carousel-nav carousel-next"><p>NEXT</p></div>
+            </div>
+                <div class="owl-carousel owl-history">
+                        <div>
+                            <div class="carousel-item-desc">
+                                    <div>The Historich merupakan sebuah gedung bersejarah peninggalan Hindia Belanda yang ada di Kota Cimahi provinsi Jawa Barat, Gedung ini beralamat di Jl. Gatot Subroto No. 19 Kelurahan Baros, Kota Cimahi dan saat ini difungsikan sebagai gedung kesenian</div>
+                            </div>
+                            <div class="carousel-item-fill"></div>
+                            <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622922590/Discover%20Cimahi/8b_bjsc4n.jpg" alt="">
+                            
+                        </div>
+                        <div>
+                            <div class="carousel-item-desc">
+                                <div>Loji atau Pos Penjagaan dibangun pada tahun 1811, bersamaan dengan pembangunan Jalan Anyer – Panarukan oleh Gubernur Jendral Herman Willem Daendels.
+                                    Pada waktu pembangunan Jalan Raya Pos dari Anyer itu sudah mencapai wilayah Bandung, pemerintah kolonial memutuskan untuk membangun sebuah pos penjagaan (semacam loji) di Cimahi, letaknya persisnya di sekitar Alun-alun Cimahi sekarang.</div>
+                            </div>
+                            <div class="carousel-item-fill"></div>
+                            <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623199432/Discover%20Cimahi/9cf1e-loji2bcimahi_ghmzp3.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="carousel-item-desc">
+                                <div>Stasiun Kereta Api dibangun bersamaan dengan pembangunan Jalan kereta antara Bandung – Cianjur pada tahun 1874 – 1893.</div>
+                            </div>
+                            <div class="carousel-item-fill"></div>
+                            <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622932636/Discover%20Cimahi/maxresdefault_fkdjdd.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="carousel-item-desc">
+                                <div>Pusat Pendidikan Militer bangunan-bangunan yang berdiri sejak tahun 1886 sebagai Pusat Pendidikan Militer sampai sekarang di Kota Cimahi. Pembangunan instalasi militer itu menandai orientasi pertahanan kolonial yang lebih memerhatikan ancaman dari dalam daripada serbuan dari luar. Pembangunan instalasi-instalasi militer di Cimahi menandai perubahan orientasi tersebut. Selain Cimahi, pemerintah kolonial juga membangun instalasi-instalasi militer di Magelang dan Malang. Kota-kota inilah yang pada masa itu disebut sebagai Kota Garnisun.</div>
+                            </div>
+                            <div class="carousel-item-fill"></div>
+                            <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623200051/Discover%20Cimahi/2539589808_uxli7z.jpg" alt="">
+                        </div>
+                </div>
         </div>
-    
-        <!-- <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622922590/Discover%20Cimahi/8b_bjsc4n.jpg" alt=""> -->
         <div class="content">
         <div class="content-left">
         <section class="timeline">
@@ -126,10 +160,10 @@
         </section>
         </div>
         <div class="content-right">
-        <h1>Sejarah</h1><br><br><br>
+        
             <p>Kota Cimahi adalah sebuah kota di Provinsi Jawa Barat, Indonesia. Kota ini terletak di tengah Kabupaten Bandung, Kota Bandung dan Kabupaten Bandung Barat. Cimahi dahulu bagian dari Kabupaten Bandung, yang kemudian ditetapkan sebagai kota administratif pada tanggal 29 Januari 1976. Pada tanggal 21 Juni 2001, Cimahi ditetapkan sebagai kota otonom. Kota Cimahi terdiri atas 3 kecamatan, yang dibagi lagi atas 15 kelurahan.</p>
             <br>
-            <p>Dalam bahasa Sunda, nama Cimahi berasal dari kata cai mahi yang berarti "air yang cukup"</p>
+            <p>Sesuai latar belakang historis dan perkembangan, awalnya Kota Cimahi diarahkan untuk dapat berfungsi sebagai kota pendidikan militer, pusat perdagangan dan jasa, daerah industri serta pemukiman dan perumahan sekaligus wilayah penyangga Kota Bandung. Dalam bahasa Sunda, nama Cimahi berasal dari kata cai mahi yang berarti "air yang cukup"</p>
             <!-- <section class="owl-carousel owl-theme owl-history" id="owl-history">
                 <div><img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622114771/Discover%20Cimahi/IMG_20210525_164311_ddvm8r.jpg" alt=""></div>
                 <div><img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622932636/Discover%20Cimahi/maxresdefault_fkdjdd.jpg" alt=""></div>
