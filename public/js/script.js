@@ -26,11 +26,14 @@ $('.owl-article').owlCarousel({
 $('.owl-history').owlCarousel({
     autoplayHoverPause:true,
     autoplay:true,
+    dots:false,
+    nav:false,
     loop:true,
     items:1,
     lazyLoad:true,
     margin:0
-});
+})
+
 $('.owl-destination').owlCarousel({
     autoplayHoverPause:true,
     autoplay:true,
@@ -41,14 +44,6 @@ $('.owl-destination').owlCarousel({
     lazyLoad:true,
     margin:0
 })
-$('.owl-history').on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
-        owl.trigger('next.owl');
-    } else {
-        owl.trigger('prev.owl');
-    }
-    e.preventDefault();
-});
 
 var rellax = new Rellax('.rellax');
 
@@ -65,11 +60,8 @@ anime({
 (function () {
     "use strict";
 
-    // define variables
     var items = document.querySelectorAll(".timeline li");
 
-    // check if an element is in viewport
-    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -89,13 +81,20 @@ anime({
     }
     }
 
-    // listen for events
     window.addEventListener("load", callbackFunc);
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
 })();
 var article=$('.owl-article');
 var destination=$('.owl-destination');
+var historia=$('.owl-history');
+$('.owl-history-wrapper .nav-next .carousel-next').click(function(){
+    historia.trigger('next.owl.carousel');
+});
+$('.owl-history-wrapper .nav-prev .carousel-prev').click(function(){
+    historia.trigger('prev.owl.carousel');
+});
+
 $('#article .nav-next .carousel-next').click(function(){
     article.trigger('next.owl.carousel');
 });
@@ -124,6 +123,36 @@ $('#destination .nav-prev,#destination .nav-next').mouseover(function(){
     destination.trigger('stop.owl.autoplay');
 })
 
-$('#destination .nav-prev,#destionation .nav-next').mouseleave(function(){
+$('#destination .nav-prev,#destination .nav-next').mouseleave(function(){
     destination.trigger('play.owl.autoplay');
 })
+
+$('.owl-history-wrapper .nav-next,.owl-history-wrapper .nav-prev').mouseover(function(){
+    historia.trigger('stop.owl.autoplay');
+});
+$('.owl-history-wrapper .nav-next,.owl-history-wrapper .nav-prev').mouseleave(function(){
+    historia.trigger('play.owl.autoplay');
+});
+$('.loader').fadeIn(1000);
+$(window).on('load', function () {
+    
+    $('.loader').fadeOut(500);
+});
+$offset=$('.section-nav').offset();
+var sticky=new Rellax('.sticky');
+console.log($offset.top);
+console.log($(window).scrollTop());
+$(window).on('scroll',function(){
+    if ($(window).scrollTop()+190 >= $offset.top) {
+        $('.section-nav').addClass('fixed-top');
+        sticky.destroy();
+        $('.section-nav').removeClass('sticky');      
+    }
+    else {
+        if($('.section-nav').hasClass('fixed-top')){
+            $('.section-nav').removeClass('fixed-top');
+            $('.section-nav').addClass('sticky');
+            sticky=new Rellax('.sticky');
+        }
+    }
+});
