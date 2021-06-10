@@ -1,4 +1,16 @@
 var owl = $('.owl-carousel');
+$('.owl-culinary').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:false,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0,
+    animeteOut: 'slideOutDown',
+    animateIn:'slideInUp'
+});
 $('.owl-article').owlCarousel({
     autoplayHoverPause:true,
     dots:true,
@@ -135,7 +147,6 @@ $('.owl-history-wrapper .nav-next,.owl-history-wrapper .nav-prev').mouseleave(fu
 });
 $('.loader').fadeIn(1000);
 $(window).on('load', function () {
-    
     $('.loader').fadeOut(500);
 });
 $offset=$('.section-nav').offset();
@@ -155,4 +166,28 @@ $(window).on('scroll',function(){
             sticky=new Rellax('.sticky');
         }
     }
+});
+
+$('.card-preview').on('click',function(){
+    $this=this;
+    // $(this).siblings().first().addClass('card-after-hide');
+    // if($(this).siblings().first().css("display","none")){
+    //     $(this).siblings().first().addClass('card-after-in');
+    //     $(this).siblings().first().removeClass('card-after-out');
+    // }
+    // else{
+    //     $(this).siblings().first().addClass('card-after-out');
+    //     $(this).siblings().first().removeClass('card-after-in');
+    // }
+    $($this).parent().siblings('.flex-item').find('.card-after').hide();
+    $($this).siblings().first().slideToggle(300);
+    // if($($this).parent().siblings().not($($this).parent()).children().first().css("display","block")){
+    //     $($this).parent().siblings().children().first().hide(function(){
+    //         $($this).siblings().first().show(500);
+    //     });  
+    // }
+    // else{
+    //     $($this).siblings().first().slideToggle(500);
+    // }
+    
 });

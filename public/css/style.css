@@ -71,7 +71,7 @@ header > nav ul li a{
 }
 
 .section-nav > nav ul li a{
-    padding: 25px 10px;
+    padding: 15px 10px;
 }
 
 li a {
@@ -118,6 +118,7 @@ Container
     height: 100vh;
 }
 .container#front #front-fill{
+    opacity: 0.7;
     /* background: linear-gradient(to top, #193534, transparent); */
     /* background: rgb(5,25,25);
     background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%); */
@@ -194,13 +195,16 @@ Container
 .container#history .content{
     margin-top: 50px;
 }
-.container#history .content .content-right{
+.container#history .content .content-left{
     text-align: justify;
+}
+.container#history .content .content-right{
+    transform: translateX(-350px);
 }
 .container#history img{
     object-fit: cover;
     height: 100%;
-    max-height: 500px;
+    max-height: 700px;
     display: flex;
     justify-content: right;
     width: 100%;
@@ -464,19 +468,19 @@ Carousel
     height: 100%;
 }
 .owl-history .carousel-item-desc{
-    font-size: 16px;
-    color: #ffffff;
+    font-size: 15px;
+    color: #000000;
     z-index: 2;
-    padding: 50px;
-    max-width: 300px;
+    padding: 50px 50px;
+    max-width: 400px;
     height: 100%;
     right: 0;
     /* background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 5px ); */
-    background-color: rgba(21, 25, 29, 0.658);
-    /* margin: 0 200px; */
+    background-color: rgba(255, 255, 255, 0.733);
+    /* margin: 0 225px; */
     position: absolute;
     width:500px;
 }
@@ -493,8 +497,8 @@ Carousel
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgb(5,25,25);
-    background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%);
+    background: rgba(5, 25, 25, 0.486);
+    /* background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%); */
     opacity: 1    ;
     transition: opacity 0.5s ease-in-out;
 }
@@ -546,6 +550,59 @@ Carousel
 .owl-destination .owl-next{
     float: right;
     margin-right: 50px;
+}
+.container#culinary .carousel-nav{
+    background-color: red;
+}
+
+.owl-culinary{
+    animation: slideIn forwards ease-in-out 0.5s;
+    position: relative;
+    /* background-color: red; */
+    padding: 0 25px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+@keyframes slideIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.owl-culinary div{
+    height: 100%;
+}
+.owl-culinary div p{
+    font-size: 14px;
+}
+.owl-culinary span{
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.owl-culinary-nav{
+    padding: 5px 25px;
+    /* background-color: forestgreen; */
+    display: block;
+}
+.owl-culinary-nav button{
+    padding: 5px;
+    margin: 0 10px 0 0;
+    border: none;
+}
+.owl-culinary #su{
+    background-color: #3e6e3a;
+}
+.owl-culinary #we{
+    background-color: tomato;
+}
+.owl-culinary #ch{
+    background-color: firebrick;
 }
 /*
 
@@ -713,7 +770,9 @@ Flexbox
 */
 
 .flex-container {
-    position: relative;
+    max-width: 80%;
+    padding: 50px 0;
+    /* position: relative;   */
     margin-top: 25px;
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
@@ -736,6 +795,7 @@ Flexbox
 }
 
 .flex-item{
+    user-select: none;
     width: 125px;
     height:175px;
     margin-top: 25px;
@@ -764,6 +824,7 @@ Flexbox
 } */
 
 .card-preview{
+    cursor: pointer;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -803,19 +864,24 @@ Flexbox
 }
 
 .card-after{
-    z-index: 0;
-    display: none;
+    background-color: #fff;
+    margin: 0 100px;
+    z-index:10;
+    top: 25%;
+    right: 0;
+    display: none;  
     position: absolute;
-    background-color: rgb(241, 0, 0);
-    width: 100%;
-    height: 500px;
+    width: 350px;
+    height: 400px;
+    border-left: 3px solid #3e6e3a;
 }
-.flex-item:focus>.card-after{
-    display: block;
+.card-content{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
-.visible{
-    display: block;
-}
+
 .loader{
     color: white;
     display: flex;
