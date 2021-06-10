@@ -27,7 +27,8 @@ Navigation
     z-index: 3;
     font-weight: 300;
     width: 100%;
-    background: rgb(21, 25, 29);
+    background: rgb(5,25,25);
+    background: linear-gradient(41deg, rgba(5,25,25,1) 0%, rgba(25,53,52,1) 28%, rgba(35,92,72,1) 62%, rgba(62,108,50,1) 95%, rgba(79,119,35,1) 100%);
     /* background: #3e6e3a; */
 }
 .fixed-top{
@@ -118,12 +119,12 @@ Container
     height: 100vh;
 }
 .container#front #front-fill{
-    opacity: 0.7;
-    /* background: linear-gradient(to top, #193534, transparent); */
+    opacity: 1;
+    background: linear-gradient(to top, #000000, transparent);
     /* background: rgb(5,25,25);
     background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%); */
-    background: rgb(5,25,25);
-    background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%);
+    /* background: rgb(5,25,25);
+    background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%); */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -361,6 +362,7 @@ Carousel
     color: #3e6e3a;
     padding: 25px;
     width: 100%;
+    height: 40%;
     box-sizing: border-box;
     background: rgba(21, 25, 29, 0.664)  ;
     font-size: 15px;
@@ -559,7 +561,6 @@ Carousel
     animation: slideIn forwards ease-in-out 0.5s;
     position: relative;
     /* background-color: red; */
-    padding: 0 25px;
     width: 100%;
     height: 100%;
     display: block;
@@ -567,9 +568,11 @@ Carousel
 }
 @keyframes slideIn {
     from{
+        right: -500%;
         opacity: 0;
     }
     to{
+        right: 0;
         opacity: 1;
     }
 }
@@ -583,10 +586,10 @@ Carousel
     color: white;
     font-size: 10px;
     padding: 5px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .owl-culinary-nav{
-    padding: 5px 25px;
+    padding: 5px 0px;
     /* background-color: forestgreen; */
     display: block;
 }
@@ -862,9 +865,12 @@ Flexbox
     z-index: 1;
     position: absolute;
 }
-
+.flex-item:first-child .card-after{
+    display: block;
+}
 .card-after{
-    background-color: #fff;
+    padding: 0 25px;
+    /* background-color: rgb(0, 0, 0); */
     margin: 0 100px;
     z-index:10;
     top: 25%;

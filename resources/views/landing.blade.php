@@ -223,7 +223,7 @@
                         <div class="card-content">
                             <div class="owl-carousel owl-culinary">
                                 <div>
-                                    <h3>Alam Wisata Cimahi</h3><br>
+                                    <h3>Alam Wisata Cihonje</h3><br>
                                     <span id="su">Sundanese</span>
                                     <span id="we">Western</span>
                                     <span id="ch">Chinese</span>
