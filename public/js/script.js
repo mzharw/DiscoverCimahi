@@ -17,7 +17,7 @@ $('.owl-article').owlCarousel({
     nav:true,
     autoplay:true,
     loop: true,
-    margin: 30,
+    // margin: 30,
     lazyLoad:true,
     responsiveClass: true,
     responsive: {
