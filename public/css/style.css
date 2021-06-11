@@ -80,10 +80,11 @@ li a {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 li a:hover {
-    color: #4f7723;
+    color: #00ffa6;
 }
 
 /* 
@@ -114,12 +115,13 @@ Container
     background-repeat: no-repeat; */
     background-image: url("https://res.cloudinary.com/zharcloudapi/image/upload/v1622880684/Discover%20Cimahi/img-back_t2r6yt.png");
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
 }
 .container#front #front-fill{
-    opacity: 1;
+    opacity: 0.6;
     background: linear-gradient(to top, #000000, transparent);
     /* background: rgb(5,25,25);
     background: linear-gradient(0deg, rgba(5,25,25,1) 0%, rgba(25,53,52,0.8631827731092436) 21%, rgba(35,92,72,0.7343312324929971) 42%, rgba(62,108,50,0.6446953781512605) 53%, rgba(67,111,46,0.5046393557422969) 68%, rgba(71,114,42,0.35898109243697474) 81%, rgba(79,119,35,0) 100%); */
@@ -144,7 +146,12 @@ Container
     width: 100%;
     background: white;
 }
+.fadeIn{
+    animation: fadeIn ease-in-out 0.5s forwards;
+    /* animation-delay: 0.25s; */
+}
 .container#front #title {
+    opacity: 0;
     width: 90%;
     position: absolute;
     top: 35%;
@@ -154,7 +161,18 @@ Container
     color: #ffffff;
     z-index: 1;
 }
+@keyframes fadeIn {
+    from{
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 .container#front #tagline{
+    animation: fadeIn ease-in-out 1s forwards;
     z-index: 1  ;
     font-weight: 100;
     letter-spacing: 0.1rem;
@@ -174,9 +192,12 @@ Container
     color: rgb(68, 68, 68);
 }
 .container#prelude{
+    text-align: center;
     padding-bottom: 100px;
 }
 .container#prelude p{
+    text-align: justify;
+    font-size: 15px;
     color: #949ca4;
     width: 100%;
 }
@@ -230,8 +251,11 @@ Container
     padding: 25px  0 50px 0;
     width: 100%;
     position: relative;
+    background: url('https://media.istockphoto.com/vectors/seamless-pattern-supermarket-grocery-store-food-drinks-vegetables-vector-id1173579665?b=1&k=6&m=1173579665&s=612x612&w=0&h=sq9_D9xMDv9Q0LyflpQ1ddZ-Yfd34UunevsMs6Dz2Q4=');
 }
-
+.container#culinary div{
+    background-color: white;
+}
 .container#destination{
     /* overflow-x: hidden; */
     position: relative;
@@ -282,10 +306,18 @@ Carousel
 
 
 */
-.owl-nav{
-    position: absolute;
-    z-index: 99;
-
+.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+.owl-theme .owl-controls .owl-page span {
+    position: relative;
+    background: none repeat scroll 0 0 #00ffa6;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
 }
 .owl-article .owl-stage{
     overflow: visible;
@@ -538,6 +570,10 @@ Carousel
     color: white;
     position: absolute;
 }
+.owl-destination div .carousel-item-desc p{
+    margin-top: 20px;
+    font-size: 15px;
+}
 .owl-destination .owl-nav{
     position: absolute;
     z-index: 99;
@@ -557,7 +593,7 @@ Carousel
     background-color: red;
 }
 
-.owl-culinary{
+#culinary .owl-carousel{
     animation: slideIn forwards ease-in-out 0.5s;
     position: relative;
     /* background-color: red; */
@@ -576,36 +612,68 @@ Carousel
         opacity: 1;
     }
 }
-.owl-culinary div{
+.container#culinary .owl-carousel div{
+    overflow: hidden;
     height: 100%;
 }
-.owl-culinary div p{
+.container#culinary .owl-carousel img{
+    object-fit: cover;
+    max-height: 150px;
+}
+.container#culinary .owl-carousel div p{
     font-size: 14px;
 }
-.owl-culinary span{
+.container#culinary .owl-carousel div span{
     color: white;
     font-size: 10px;
     padding: 5px;
     /* border-radius: 5px; */
 }
-.owl-culinary-nav{
-    padding: 5px 0px;
-    /* background-color: forestgreen; */
+.container#culinary .owl-nav{
     display: block;
+    height: 50px;
+    width: 100%;
+    left: 0%;
+    top: 80%;
+    z-index: 100;
+    position: absolute;
 }
-.owl-culinary-nav button{
-    padding: 5px;
-    margin: 0 10px 0 0;
-    border: none;
+.container#culinary .owl-nav button{
+    /* margin-right: 10px; */
+    background-color: #3e6e3a;
+    transition: background-color 0.5s ease-in-out;
 }
-.owl-culinary #su{
+.container#culinary .owl-nav button:hover{
+    background-color:rgb(21, 25, 29);
+}
+.container#culinary .owl-nav button span{
+    top: 0;
+    color: white;
+    /* padding: 15px 15px 15px 0; */
+    font-size: 25px;
+}
+
+
+.container#culinary .owl-carousel #id{
+    background-color: #4f7723;
+}
+.container#culinary .owl-carousel #su{
     background-color: #3e6e3a;
 }
-.owl-culinary #we{
+.container#culinary .owl-carousel #we{
     background-color: tomato;
 }
-.owl-culinary #ch{
+.container#culinary .owl-carousel #ja{
+    background-color: #f45b69;
+}
+.container#culinary .owl-carousel #ch{
     background-color: firebrick;
+}
+.container#culinary .owl-carousel #kr{
+    background-color: dodgerblue;
+}
+.container#culinary .owl-carousel #me{
+    background-color: sandybrown;
 }
 /*
 
@@ -773,7 +841,7 @@ Flexbox
 */
 
 .flex-container {
-    max-width: 80%;
+    max-width: 70%;
     padding: 50px 0;
     /* position: relative;   */
     margin-top: 25px;
