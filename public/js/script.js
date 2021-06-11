@@ -1,15 +1,83 @@
 var owl = $('.owl-carousel');
-$('.owl-culinary').owlCarousel({
+$('.owl-culinary-id').owlCarousel({
     autoplayHoverPause:true,
     autoplay:true,
-    dots:false,
-    nav:false,
+    dots:true,
+    nav:true,
     loop:true,
     items:1,
     lazyLoad:true,
     margin:0,
-    animeteOut: 'slideOutDown',
-    animateIn:'slideInUp'
+});
+$('.owl-culinary-su').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0
+});
+$('.owl-culinary-we').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0,
+});
+$('.owl-culinary-ja').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0,
+});
+$('.owl-culinary-kr').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0,
+});
+$('.owl-culinary-ch').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0,
+});
+$('.owl-culinary-in').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0,
+});
+$('.owl-culinary-me').owlCarousel({
+    autoplayHoverPause:true,
+    autoplay:true,
+    dots:false,
+    nav:true,
+    loop:true,
+    items:1,
+    lazyLoad:true,
+    margin:0,
 });
 $('.owl-article').owlCarousel({
     autoplayHoverPause:true,
@@ -17,7 +85,7 @@ $('.owl-article').owlCarousel({
     nav:true,
     autoplay:true,
     loop: true,
-    // margin: 30,
+    margin: 30,
     lazyLoad:true,
     responsiveClass: true,
     responsive: {
@@ -100,13 +168,44 @@ anime({
 var article=$('.owl-article');
 var destination=$('.owl-destination');
 var historia=$('.owl-history');
+var culinaryId=$('.owl-culinary-id');
+var culinarySu=$('.owl-culinary-su');
+var culinaryWe=$('.owl-culinary-we');
+
+
+$('#sundanese .owl-culinary-nav #next').on('click', function(){
+    culinarySu.trigger('next.owl.carousel');
+});
+culinaryId.next().find('#prev').on('click', function(){
+    culinaryId.trigger('prev.owl.carousel');
+});
+
+culinarySu.next().find('#next').on('click', function(){
+    culinarySu.trigger('next.owl.carousel');
+});
+$('.owl-culinary-su').next().find('#prev').on('click', function(){
+    culinarySu.trigger('prev.owl.carousel');
+});
+
+$('.owl-culinary-we').next().find('#next').on('click', function(){
+    culinaryWe.trigger('next.owl.carousel');
+});
+$('.owl-culinary-we').next().find('#prev').on('click', function(){
+    culinaryWe.trigger('prev.owl.carousel');
+});
+
 $('.owl-history-wrapper .nav-next .carousel-next').click(function(){
     historia.trigger('next.owl.carousel');
 });
 $('.owl-history-wrapper .nav-prev .carousel-prev').click(function(){
     historia.trigger('prev.owl.carousel');
 });
-
+// $('.owl-culinary-nav #next').click(function(){
+//     culinary.trigger('next.owl.carousel');
+// });
+// $('.owl-culinary-nav #prev').click(function(){
+//     culinary.trigger('prev.owl.carousel');
+// });
 $('#article .nav-next .carousel-next').click(function(){
     article.trigger('next.owl.carousel');
 });
@@ -145,9 +244,17 @@ $('.owl-history-wrapper .nav-next,.owl-history-wrapper .nav-prev').mouseover(fun
 $('.owl-history-wrapper .nav-next,.owl-history-wrapper .nav-prev').mouseleave(function(){
     historia.trigger('play.owl.autoplay');
 });
+// $('.owl-culinary-nav #next, .owl-culinary-nav #prev').mouseover(function(){
+//     culinary.trigger('stop.owl.autoplay');
+// });
+// $('.owl-culinary-nav #next, .owl-culinary-nav #prev').mouseleave(function(){
+//     culinary.trigger('play.owl.autoplay');
+// });
 $('.loader').fadeIn(1000);
 $(window).on('load', function () {
-    $('.loader').fadeOut(500);
+    $('.loader').fadeOut(500,function(){
+        $('.container#front #title').addClass('fadeIn');
+    });
 });
 $offset=$('.section-nav').offset();
 var sticky=new Rellax('.sticky');

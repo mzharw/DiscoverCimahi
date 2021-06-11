@@ -9,9 +9,8 @@
     <header>
         <nav>
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#article">News</a></li>
             <li><a href="#about">About</a></li>
         </ul>
     </nav>
@@ -29,10 +28,10 @@
     <div class="section-nav sticky" data-rellax-speed="3" data-rellax-percentage="0">
         <nav>
         <ul>
-            <li><a class="active" href="#history"><span class="fa fa-fw fa-landmark"></span> History</a></li>
-            <li><a href="#news"> <span class="fa fa-fw fa-utensils"></span> Culinary</a></li>
-            <li><a href="#contact"> <span class="fa fa-fw fa-map-marked-alt"></span> Destination</a></li>
-            <li><a href="#about"> <span class="fa fa-fw fa-info-circle"></span> Information</a></li>
+            <li><a href="#history"><span class="fa fa-fw fa-landmark"></span> History</a></li>
+            <li><a href="#culinary"> <span class="fa fa-fw fa-utensils"></span> Culinary</a></li>
+            <li><a href="#destination"> <span class="fa fa-fw fa-map-marked-alt"></span> Destination</a></li>
+            <li><a href="#info"> <span class="fa fa-fw fa-info-circle"></span> Information</a></li>
         </ul>
         </nav>
     </div>
@@ -45,7 +44,7 @@
         </div>
         <div class="owl-carousel owl-theme owl-article">
                 <div class="carousel-item">
-                    <a href="a">
+                    <a href="#">
                     <div class="carousel-item-content">
                         <div class="carousel-item-desc">
                             <div id="article-date">
@@ -60,17 +59,63 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="a">
+                    <a href="#">
                     <div class="carousel-item-content">
                         <div class="carousel-item-desc">
                         <div id="article-date">
-                                04 Juni 2021
+                                9 Juni 2021
                             </div>
                         Pasar Antri Cimahi Dibuka Lagi, Gelang Tangan Jadi Tanda Wajib bagi Pedagang yang Negatif Covid-19
                         <p>Suasana Pasar Antri belum terlalu ramai usai Pemkot Cimahi membuka secara resmi pasar di Jalan Sriwijaya Kota Cimahi, Minggu 7 Juni 2020.</p>
                         </div>
                         <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622112720/Discover%20Cimahi/IMG_20210525_165006_unxjfe.jpg">
                         <!-- <button>Discover</button> -->
+                        <div class="carousel-item-fill"></div>
+                    </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                    <div class="carousel-item-content">
+                        <div class="carousel-item-desc">
+                        <div id="article-date">
+                                9 Juni 2021
+                            </div>
+                            McD Cimahi Tutup Lebih Cepat karena Kewalahan Terima Pesanan BTS Meal, Ojol Kecewa
+                        <p>Gerai makanan cepat saji McDonald’s (Mcd) di kawasan Sangkuriang, Kota Cimahi, Jawa Barat terpaksa menutup layanannya lebih cepat pada siang tadi.</p>
+                        </div>
+                        <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2021/06/09/3448246030.png">
+                        <!-- <button>Discover</button> -->
+                        <div class="carousel-item-fill"></div>
+                    </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                    <div class="carousel-item-content">
+                        <div class="carousel-item-desc">
+                        <div id="article-date">
+                            11 Juni 2021
+                            </div>
+                            PROFIL PSKC Kota Cimahi - Ini Lawan yang akan Dihadapi dalam Uji Coba Besok
+                        <p>Salah satu klub peserta Liga 2, PSKC Kota Cimahi, makin serius menatap pertarungan Liga 2 yang akan bergulir tidak lama lagi.</p>
+                        </div>
+                        <img src="https://cdn-2.tstatic.net/jabar/foto/bank/images/pskc-kota-cimahi_1062021.jpg">
+                        <div class="carousel-item-fill"></div>
+                    </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#">
+                    <div class="carousel-item-content">
+                        <div class="carousel-item-desc">
+                        <div id="article-date">
+                            11 Juni 2021
+                            </div>
+                            Guru dan Murid Terpapar Covid-19, Simulasi PTM di Cimahi Dihentikan
+                        <p>Kegiatan simulasi pembelajaran tatap muka (PTM) gelombang 2 di Kota Cimahi akhirnya dihentikan. Pasalnya, ditemukan sejumlah guru, murid SD dan SMP yang terpapar Covid-19, sehingga sangat berisiko jika simulasi terus dilanjutkan.</p>
+                        </div>
+                        <img src="https://img.inews.co.id/media/822/files/inews_new/2021/05/24/pembelajaran_tatap_muka.jpeg">
                         <div class="carousel-item-fill"></div>
                     </div>
                     </a>
@@ -221,21 +266,56 @@
                 <div class="flex-item">
                     <div class="card-after">
                         <div class="card-content">
-                            <div class="owl-carousel owl-culinary">
+                            <div class="owl-carousel owl-theme owl-culinary-id">
                                 <div>
-                                    <h3>Alam Wisata Cihonje</h3><br>
-                                    <span id="su">Sundanese</span>
-                                    <span id="we">Western</span>
-                                    <span id="ch">Chinese</span>
-                                    <img src="https://www.jejakpiknik.com/wp-content/uploads/2020/02/awc@alamwisatacimahi-630x380.jpg" alt="">
-                                    <br>
-                                    <p><b>Alamat</b>: Jln. Kolonel Matsuri KM.04, No.157 Cipageran, Cimahi Utara, Jawa Barat.</p>
-                                    <p></p>
+                                        <h3>Kafe Kupu Kupu</h3><br>
+                                        <span id="id">Indonesian</span>
+                                        <img src="https://ik.imagekit.io/tvlk/cul-asset/guys1L+Yyer9kzI3sp-pb0CG1j2bhflZGFUZOoIf1YOBAm37kEUOKR41ieUZm7ZJ/tvlk-prod-cul-assets/culinary/asset/REST_201-960x720-FIT_AND_TRIM-2f7993b494e02ac803f1710f45004ef2.jpeg" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Jl. Kolonel Masturi No.KM.3, Cipageran, Kec. Cimahi Utara, Kota Cimahi</p>
                                 </div>
-                            </div>
-                            <div class="owl-culinary-nav">
-                            <button>Prev</button><button>Next</button>
-                            </div>
+                                <div>
+                                        <h3>Dapur Kraton Restaurant</h3><br>
+                                        <span id="id">Indonesian</span>
+                                        <img src="https://keluyuran.com/wp-content/uploads/2016/12/dk-resto.webp" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Komplek Pondok Mas Indah, Jl. Pd. Mas Raya No.42, Leuwigajah, Kec. Cimahi Sel., Kota Cimahi</p>
+                                </div>
+                                <div>
+                                        <h3>Mymo Bakso Ceker</h3><br>
+                                        <span id="id">Indonesian</span>
+                                        <img src="https://keluyuran.com/wp-content/uploads/2017/10/mymo-mie-baso-ceker.webp" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Komplek Pondok Mas Indah, Jl. Pd. Mas Raya No.42, Leuwigajah, Kec. Cimahi Sel., Kota Cimahi</p>
+                                </div>
+                                <div>
+                                        <h3>Warung Rizky</h3><br>
+                                        <span id="id">Indonesian</span>
+                                        <img src="https://keluyuran.com/wp-content/uploads/2017/10/warung-rizky-cimahi.webp" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Jl. Jend. Sudirman No.1, Baros, Kec. Cimahi Tengah, Kota Cimahi,</p>
+                                </div>
+                                <div>
+                                        <h3>RM Padang Kiambang Raya</h3><br>
+                                        <span id="id">Indonesian</span>
+                                        <img src="https://keluyuran.com/wp-content/uploads/2018/10/Capture-21.webp" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Jl. Raya Gadobangkong No.4C, Gadobangkong, Kec. Ngamprah, Kabupaten Bandung Barat</p>
+                                </div>
+                                <div>
+                                        <h3>Kedai Belly Boom</h3><br>
+                                        <span id="id">Indonesian</span>
+                                        <span id="we">Western</span>
+                                        <img src="https://jejakpiknik.com/wp-content/uploads/2021/04/2_FB-Kedaibellyboom-630x380.jpg" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>:  Jl. Raya Cibabat No.120/ 424, Cibabat, Kec. Cimahi Utara, Kota Cimahi</p>
+                                        <p></p>
+                                </div>
+                            </div>  
+                            <!-- <div class="owl-culinary-nav">
+                                <button id="prev">Prev</button><button id="next">Next</button>
+                            </div> -->
+                            
                         </div>
                         
                     </div>
@@ -245,24 +325,41 @@
                     </div>
                     
                 </div>
-                <div class="flex-item">
+                <div class="flex-item" id="sundanese">
                     <div class="card-after">
                         <div class="card-content">
-                        <div class="owl-carousel owl-culinary">
-                                <div>
-                                    <h3>Alam Wisata Cimahi</h3><br>
-                                    <span id="su">Sundanese</span>
-                                    <span id="we">Western</span>
-                                    <span id="ch">Chinese</span>
-                                    <img src="https://www.jejakpiknik.com/wp-content/uploads/2020/02/awc@alamwisatacimahi-630x380.jpg" alt="">
-                                    <br>
-                                    <p><b>Alamat</b>: Jln. Kolonel Matsuri KM.04, No.157 Cipageran, Cimahi Utara, Jawa Barat.</p>
-                                    <p></p>
-                                </div>
+                            <div class="owl-carousel owl-culinary-su">
+                                    <div>
+                                        <h3>Alam Wisata Cimahi</h3><br>
+                                        <span id="su">Sundanese</span>
+                                        <span id="we">Western</span>
+                                        <span id="ch">Chinese</span>
+                                        <img src="https://www.jejakpiknik.com/wp-content/uploads/2020/02/awc@alamwisatacimahi-630x380.jpg" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Jln. Kolonel Matsuri KM.04, No.157 Cipageran, Cimahi Utara, Jawa Barat.</p>
+                                        <p></p>
+                                    </div>
+                                    <div>
+                                        <h3>Warung Nasi Ampera</h3><br>
+                                        <span id="su">Sundanese</span>
+                                        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623406114/Discover%20Cimahi/picture-1521521151_wmchr5.jpg" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Jln. Kolonel Matsuri KM.04, No.157 Cipageran, Cimahi Utara, Jawa Barat.</p>
+                                        <p></p>
+                                    </div>
+                                    <div>
+                                        <h3>Rumah Makan Timbel Bu Yanti</h3><br>
+                                        <span id="su">Sundanese</span>
+                                        <span id="id">Indonesian</span>
+                                        <img src="https://media-cdn.tripadvisor.com/media/photo-o/05/5f/79/37/rumah-makan-timbel-bu.jpg" alt="">
+                                        <br>
+                                        <p><b>Alamat</b>: Jln. Baros (Bertempat Di Lantai 2 Di Atas Toko Tugino Yang Berada Di Sebelah Saung Steak Dan Saung Baros), Cimahi 40521 Indonesia</p>
+                                        <p></p>
+                                    </div>
                             </div>
-                            <div class="owl-culinary-nav">
-                            <button>Prev</button><button>Next</button>
-                            </div>
+                            <!-- <div class="owl-culinary-nav">
+                                <button>Prev</button><button>Next</button>
+                            </div> -->
                         </div>
                     </div>
                     <div class="card-preview">
@@ -273,7 +370,181 @@
                 <div class="flex-item">
                     <div class="card-after">
                             <div class="card-content">
-                            <div class="owl-carousel owl-culinary">
+                            <div class="owl-carousel owl-culinary-we">
+                                <div>
+                                    <h3>EatBoss</h3><br>
+                                    <span id="we">Western</span>
+                                    <span id="ch">Chinese</span>
+                                    <img src="https://jejakpiknik.com/wp-content/uploads/2021/04/8_kusnadi-kusnadi-630x380.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Jend. H. Amir Machmud No.429, Cigugur Tengah, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Hanjuang Café & Resto</h3><br>
+                                    <span id="we">Western</span>
+                                    <span id="ja">Japanese</span>
+                                    <span id="kr">Korean</span>
+                                    <img src="https://jejakpiknik.com/wp-content/uploads/2021/04/9_twitter-@pandigacimahi-630x380.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Sirnarasa No.11 Cihanjuang, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>McDonalds</h3><br>
+                                    <span id="we">Western</span>
+                                    <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623413968/Discover%20Cimahi/EXoyW-iUYAMBtgz_vvmali.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Sangkuriang No.1, Padasuka, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40512</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Alam Wisata Cimahi</h3><br>
+                                    <span id="su">Sundanese</span>
+                                    <span id="we">Western</span>
+                                    <span id="ch">Chinese</span>
+                                    <img src="https://www.jejakpiknik.com/wp-content/uploads/2020/02/awc@alamwisatacimahi-630x380.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jln. Kolonel Matsuri KM.04, No.157 Cipageran, Cimahi Utara, Jawa Barat.</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Kedai Belly Boom</h3><br>
+                                    <span id="id">Indonesian</span>
+                                    <span id="we">Western</span>
+                                    <img src="https://jejakpiknik.com/wp-content/uploads/2021/04/2_FB-Kedaibellyboom-630x380.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>:  Jl. Raya Cibabat No.120/ 424, Cibabat, Kec. Cimahi Utara, Kota Cimahi</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>A&W Restaurant </h3><br>
+                                    <span id="we">Western</span>
+                                    <img src="https://bandung.transstudiomall.com/asset/tenant/20190409172600000000.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Cimahi Mall, Ground Floor, Blok BT / A - 1, Jl. Gandawijaya No.1, Setiamanah, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40524</p>
+                                </div>
+                                <div>
+                                    <h3>KFC</h3><br>
+                                    <span id="we">Western</span>
+                                    <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623418633/Discover%20Cimahi/REST_426-720x720-FIT_AND_TRIM-3d7d45c58008504de236f9f2fa301f7c_uui0ca.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: . Raya Cibabat, RT.01/RW.03, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513 <br>Cimahi Mall, Jl. Gandawijaya, Setiamanah, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40523</p>
+                                </div>
+                            </div>
+                            <!-- <div class="owl-culinary-nav">
+                                <button>Prev</button><button>Next</button>
+                            </div> -->
+                            </div>
+                    </div>
+                    <div class="card-preview">
+                        <p><b>Western</b></p>
+                        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622980638/Discover%20Cimahi/1200px-RedDot_Burger_dphtss.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="card-after">
+                        <div class="card-content">
+                        <div class="owl-carousel owl-culinary-ja">
+                                <div>
+                                    <h3>Ramen Aboy</h3><br>
+                                    <span id="ja">Japanese</span>
+                                    <img src="https://keluyuran.com/wp-content/uploads/2019/06/ramen-enak-di-cimahi-ramen-aboy.webp" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Cipageran, Kec. Cimahi Utara, Kota Cimahi</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Ramen Hashi</h3><br>
+                                    <span id="ja">Japanese</span>
+                                    <img src="https://keluyuran.com/wp-content/uploads/2019/06/hashi-ramen-cimahi.webp" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Lurah No.169, Karangmekar, Kec. Cimahi Tengah, Kota Cimahi</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Ramen Aa</h3><br>
+                                    <span id="ja">Japanese</span>
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/08/f8/d9/20161231-143146-largejpg.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Warung Contong no. 70, Cimahi 40524 Indonesia</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <!-- <div class="owl-culinary-nav">
+                                <button>Prev</button><button>Next</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="card-preview">
+                        <p><b>Japanese</b></p>
+                        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622980805/Discover%20Cimahi/3430518730_emxd7j.jpg" alt="">
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <div class="card-after">
+                        <div class="card-content">
+                        <div class="owl-carousel owl-culinary-kr">
+                                <div>
+                                    <h3>Fat Oppa</h3><br>
+                                    <span id="kr">Korean</span>
+                                    <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623418157/Discover%20Cimahi/picture-1555082574_jvrppt.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl.Raya Barat No.772, Padasuka, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40526</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Hanjuang Café & Resto</h3><br>
+                                    <span id="we">Western</span>
+                                    <span id="ja">Japanese</span>
+                                    <span id="kr">Korean</span>
+                                    <img src="https://jejakpiknik.com/wp-content/uploads/2021/04/9_twitter-@pandigacimahi-630x380.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Sirnarasa No.11 Cihanjuang, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Jeontong Korean Street Food</h3><br>
+                                    <span id="kr">Korean</span>
+                                    <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623418406/Discover%20Cimahi/REST_IMG-960x720-FIT_AND_TRIM-a4fb87e1c2165ca78b922a3cbd34a186_qznjrx.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Raya Cimindi gg haji arsad rt04 rw 19 no 1, Cibeureum, Kec. Cimahi Sel., Kota Cimahi, Jawa Barat 40535</p>
+                                    <p></p>
+                                </div>  
+                        </div>
+                            <!-- <div class="owl-culinary-nav">
+                                <button>Prev</button><button>Next</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="card-preview">
+                        <p><b>Korean</b></p>
+                        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622980911/Discover%20Cimahi/7a618ed7ae6104af49dd1b0cad56daff_lpsapi.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class="flex-item">
+                    <div class="card-after">
+                        <div class="card-content">
+                        <div class="owl-carousel owl-culinary-ch">
+                                <div>
+                                    <h3>RM Bakmi Gang Sempit</h3><br>
+                                    <span id="ch">Chinese</span>
+                                    <span id="id">Indonesian</span>
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/be/9e/52/kwetiaw-goreng-sapi.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Raya Tagog no 501, Cimahi 40523 Indonesia</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>EatBoss</h3><br>
+                                    <span id="we">Western</span>
+                                    <span id="ch">Chinese</span>
+                                    <img src="https://jejakpiknik.com/wp-content/uploads/2021/04/8_kusnadi-kusnadi-630x380.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Jend. H. Amir Machmud No.429, Cigugur Tengah, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat</p>
+                                    <p></p>
+                                </div>
                                 <div>
                                     <h3>Alam Wisata Cimahi</h3><br>
                                     <span id="su">Sundanese</span>
@@ -285,42 +556,9 @@
                                     <p></p>
                                 </div>
                             </div>
-                            <div class="owl-culinary-nav">
+                            <!-- <div class="owl-culinary-nav">
                                 <button>Prev</button><button>Next</button>
-                            </div>
-                            </div>
-                    </div>
-                    <div class="card-preview">
-                        <p><b>Western</b></p>
-                        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622980638/Discover%20Cimahi/1200px-RedDot_Burger_dphtss.jpg" alt="">
-                    </div>
-                </div>
-                <div class="flex-item">
-                    <div class="card-after">
-                        <div class="card-content">
-                            slkdalksjgdkl
-                        </div>
-                    </div>
-                    <div class="card-preview">
-                        <p><b>Japanese</b></p>
-                        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622980805/Discover%20Cimahi/3430518730_emxd7j.jpg" alt="">
-                    </div>
-                </div>
-                <div class="flex-item">
-                    <div class="card-after">
-                        <div class="card-content">
-                            slkdalksjgdkl
-                        </div>
-                    </div>
-                    <div class="card-preview">
-                        <p><b>Korean</b></p>
-                        <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622980911/Discover%20Cimahi/7a618ed7ae6104af49dd1b0cad56daff_lpsapi.jpg" alt="">
-                    </div>
-                </div>
-                <div class="flex-item">
-                    <div class="card-after">
-                        <div class="card-content">
-                            slkdalksjgdkl
+                            </div> -->
                         </div>
                     </div>
                     <div class="card-preview">
@@ -328,21 +566,49 @@
                         <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622980967/Discover%20Cimahi/Chinese-food_abfszk.jpg" alt="">
                     </div>
                 </div>
-                <div class="flex-item">
+                <!-- <div class="flex-item">
                     <div class="card-after">
                         <div class="card-content">
-                            slkdalksjgdkl
+                            Gaada 
                         </div>
                     </div>
                     <div class="card-preview">
                         <p><b>Indian</b></p>
                         <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622981048/Discover%20Cimahi/the-best-top-10-indian-dishes_sk6tfi.jpg" alt="">
                     </div>
-                </div>
+                </div> -->
                 <div class="flex-item">
                     <div class="card-after">
                         <div class="card-content">
-                            slkdalksjgdkl
+                        <div class="owl-carousel owl-culinary-ch">
+                                <div>
+                                    <h3>KABOBS</h3><br>
+                                    <span id="me">Middle Eastern</span>
+                                    <img src="https://assets-pergikuliner.com/mEPbEo8fpP2BjyXd7ykWkkGFhqU=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/962641/picture-1529648870.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Jend. H. Amir Machmud No.482, Padasuka, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40526</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Republic Kebab Premium</h3><br>
+                                    <span id="me">Middle Eastern</span>
+                                    <img src="http://bandungcity.net/wp-content/uploads/2020/01/edc2fbb96a3843d682f03daa7e3046eb_1572518800024995426.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Pesantren No.166, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513</p>
+                                    <p></p>
+                                </div>
+                                <div>
+                                    <h3>Halabi Kitchen</h3><br>
+                                    <span id="me">Middle Eastern</span>
+                                    <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623419536/Discover%20Cimahi/AF1QipMb06kCSnUyrNI61lKE4SpX0tSJGolIqg_NRzm7_s512_cbqeo5.jpg" alt="">
+                                    <br>
+                                    <p><b>Alamat</b>: Jl. Pesantren No.190, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <!-- <div class="owl-culinary-nav">
+                                <button>Prev</button><button>Next</button>
+                            </div> -->
                         </div>
                     </div>
                     <div class="card-preview">
@@ -374,13 +640,25 @@
             <div>
                 <div class="carousel-item-desc">
                         <div>Technopark</div>
+                        <p>Jl. Baros Utama No.78, Leuwigajah, Kec. Cimahi Sel., Kota Cimahi, Jawa Barat 40532</p>
+                        
                 </div>
                 <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622114661/Discover%20Cimahi/IMG_20210525_160642_qxa2il.jpg" alt="">
                 <div class="carousel-item-fill"></div>
             </div>
             <div>
                 <div class="carousel-item-desc">
+                        <div>Pandiga Cimahi</div>
+                        <p>Jl. Sirnarasa Jl. Cihanjuang No.11, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513</p>
+                        
+                </div>
+                <img src="https://pbs.twimg.com/media/DBPGGWbV0AAns9_.jpg" alt="">
+                <div class="carousel-item-fill"></div>
+            </div>
+            <div>
+                <div class="carousel-item-desc">
                         <div>Taman Kartini</div>
+                        <p>Jl. Baros No.6, Baros, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40521</p>
                 </div>
                 <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622989678/Discover%20Cimahi/1621948118109-01_pxigfe.jpg" alt="">
                 <div class="carousel-item-fill"></div>
@@ -388,6 +666,7 @@
             <div>
                 <div class="carousel-item-desc">
                         <div>Brigif 15 Kujang</div>
+                        <p>Lingkar, Baros, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40521</p>
                 </div>
                 <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622993839/Discover%20Cimahi/IMG_20210526_093548_iyajy8.jpg" alt="">
                 <div class="carousel-item-fill"></div>
@@ -395,6 +674,7 @@
             <div>
                 <div class="carousel-item-desc">
                         <div>Lapang Tembak</div>
+                        <p> Padasuka, Central Cimahi, Cimahi City, West Java 40531.</p>
                 </div>
                 <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622993926/Discover%20Cimahi/IMG_20210526_134646_mn653z.jpg" alt="">
                 <div class="carousel-item-fill"></div>
@@ -402,6 +682,7 @@
             <div>
                 <div class="carousel-item-desc">
                         <div>Masjid Al-Baakhirah</div>
+                        <p>Jl. Bapa Ampi No.1E, RT.02/RW.06, Baros, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40521</p>
                 </div>
                 <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1622993947/Discover%20Cimahi/WhatsApp_Image_2021-05-25_at_19.34.51_emem1m.jpg" alt="">
                 <div class="carousel-item-fill"></div>
