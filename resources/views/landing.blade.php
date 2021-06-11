@@ -592,7 +592,7 @@
                                 <div>
                                     <h3>Republic Kebab Premium</h3><br>
                                     <span id="me">Middle Eastern</span>
-                                    <img src="http://bandungcity.net/wp-content/uploads/2020/01/edc2fbb96a3843d682f03daa7e3046eb_1572518800024995426.jpg" alt="">
+                                    <img src="https://res.cloudinary.com/zharcloudapi/image/upload/v1623435130/Discover%20Cimahi/edc2fbb96a3843d682f03daa7e3046eb_1572518800024995426_mphu1r.jpg" alt="">
                                     <br>
                                     <p><b>Alamat</b>: Jl. Pesantren No.166, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513</p>
                                     <p></p>
